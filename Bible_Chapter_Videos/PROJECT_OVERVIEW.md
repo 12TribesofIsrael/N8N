@@ -1,5 +1,10 @@
 # 📖 Bible Chapter Video Automation Project
 
+**📋 Document Version**: `v2.1.0`  
+**🔄 Last Updated**: January 2, 2025  
+**⚡ Current System**: Bible Chapter Generator (Production Ready)  
+**🆕 Latest Release**: `v3.0.0` - Black Hebrew Israelite Specialized
+
 ## 🎯 **Project Goal**
 Create an automated system to generate videos for every chapter of the Bible using JSON2Video API with dynamic scene generation based on text length.
 

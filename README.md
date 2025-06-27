@@ -4,8 +4,12 @@
 > Advanced workflows for generating high-quality, long-form videos with AI-powered content creation and professional presentation.
 
 ![Status](https://img.shields.io/badge/Status-Production%20Ready-brightgreen)
-![Version](https://img.shields.io/badge/Version-2.0.0-blue)
+![Version](https://img.shields.io/badge/Version-v2.1.0-blue)
 ![Platform](https://img.shields.io/badge/Platform-n8n%20%7C%20Make.com-orange)
+
+**📋 Document Version**: `v2.1.0`  
+**🔄 Last Updated**: January 2, 2025  
+**📊 System Version**: See `VERSIONING_STRATEGY.md` for component versions
 
 ---
 
@@ -74,34 +78,48 @@ Historical workflow implementations and backup systems:
 
 ## 🚀 **Quick Start**
 
+### **🎯 For Production Use** ⭐ **RECOMMENDED**
+**👉 Follow: `PRODUCTION_USER_GUIDE.md`** - Complete 30-minute setup to production
+
+**📋 Daily Reference**: `QUICK_REFERENCE_CARD.md` - Essential commands and workflows
+
 ### **Prerequisites**
 - n8n or Make.com account
-- JSON2Video API access
-- AI service API keys (Perplexity AI recommended)
-- Python 3.7+ for processing scripts
+- JSON2Video API access (Startup Plan $99.95/month recommended)
+- Perplexity AI API access ($20/month Pro plan)
+- Python 3.7+ for text processing
 
-### **Getting Started**
+### **🎬 Production-Ready Setup**
 
-1. **Choose Your Project**:
+1. **Download System Files**:
    ```bash
-   # For Biblical Content
-   cd Bible_Chapter_Videos/
+   # For General Biblical Content
+   RELEASES/v2.1.0/BibleChapterMaster-v2.1.0.json
+   RELEASES/v2.1.0/biblical_text_processor-v1.1.0.py
    
-   # For General Content
-   cd scale/
+   # For Black Hebrew Israelite Content  
+   RELEASES/v3.0.0/BHI-Workflow-v3.0.0.json
+   RELEASES/v3.0.0/BHI-Template-v3.0.0.json
    ```
 
-2. **Follow Project Guide**:
+2. **Configure APIs**:
+   - Import workflow into n8n
+   - Set up Perplexity AI and JSON2Video credentials
+   - Test with sample biblical content
+
+3. **Start Production**:
    ```bash
-   # Each project has its own README and quick start guide
-   cat README.md
-   cat QUICK_START_GUIDE.md
+   # Daily workflow (8-13 minutes per video)
+   cd Bible_Chapter_Videos
+   notepad Input                      # Add biblical text
+   python biblical_text_processor.py  # Process text  
+   # Copy output → Paste in n8n → Execute workflow
    ```
 
-3. **Deploy Workflow**:
-   - Import workflow JSON into your automation platform
-   - Configure API keys and settings
-   - Test with sample content
+### **📊 Production Capacity**
+- **6-8 videos per day** (professional quality)
+- **4-7 minute videos** (optimal engagement)
+- **$1.27 cost per video** (including all APIs)
 
 ---
 

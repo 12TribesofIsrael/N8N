@@ -4,8 +4,12 @@
 > Automated n8n workflow for generating high-quality biblical videos with dynamic timing and professional presentation.
 
 ![Status](https://img.shields.io/badge/Status-Production%20Ready-brightgreen)
-![Version](https://img.shields.io/badge/Version-1.0.0-blue)
+![Version](https://img.shields.io/badge/Version-v2.1.0-blue)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
+
+**📋 Document Version**: `v2.1.0`  
+**🔄 Last Updated**: January 2, 2025  
+**⚡ Latest Release**: See `RELEASES/v3.0.0/` for Black Hebrew Israelite specialized version
 
 ---
 

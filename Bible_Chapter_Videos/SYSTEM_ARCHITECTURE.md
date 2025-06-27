@@ -1,5 +1,10 @@
 # 🏗️ System Architecture - Bible Chapter Video Generator
 
+**📋 Document Version**: `v2.1.0`  
+**🔄 Last Updated**: January 2, 2025  
+**🏗️ Architecture**: Microservices-based automation system  
+**⚡ Latest Version**: `v3.0.0` - Enhanced with cultural authenticity framework
+
 ## 📋 **Architecture Overview**
 
 The Bible Chapter Video Generator is a **microservices-based automation system** that transforms biblical text into professional-quality videos through a series of integrated components and APIs.

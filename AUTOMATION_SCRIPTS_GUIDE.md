@@ -1,7 +1,7 @@
 # 🤖 Automation Scripts Guide
 
 **📋 Document Version**: `v2.1.0`  
-**🔄 Last Updated**: January 2, 2025  
+**🔄 Last Updated**: June 27, 2025  
 **🎯 Purpose**: Complete guide to automated text processing and formatting scripts
 
 ---
@@ -292,6 +292,166 @@ C:\Python39\python.exe biblical_text_processor.py
 ```python
 # Future enhancement: Direct n8n API integration
 # Script could automatically submit processed text to workflow
+```
+
+### **🔗 Complete Workflow Integration Examples**
+
+#### **End-to-End Automation Script**
+```python
+import subprocess
+import requests
+import json
+import time
+
+def automated_video_generation(biblical_text, n8n_webhook_url):
+    """Complete automation: Text processing -> n8n -> Video generation"""
+    
+    # Step 1: Process text
+    with open('Input', 'w') as f:
+        f.write(biblical_text)
+    
+    # Run text processor
+    result = subprocess.run(['python', 'biblical_text_processor.py'], 
+                          capture_output=True, text=True)
+    
+    # Step 2: Read processed text
+    processed_files = [f for f in os.listdir('.') if f.startswith('processed_biblical_text_')]
+    latest_file = max(processed_files, key=os.path.getctime)
+    
+    with open(latest_file, 'r') as f:
+        processed_text = f.read()
+    
+    # Step 3: Trigger n8n workflow
+    payload = {
+        "biblical_text": processed_text,
+        "timestamp": time.time()
+    }
+    
+    response = requests.post(n8n_webhook_url, json=payload)
+    
+    if response.status_code == 200:
+        print(f"✅ Video generation started: {response.json()}")
+        return response.json()
+    else:
+        print(f"❌ Failed to trigger workflow: {response.status_code}")
+        return None
+
+# Usage example
+biblical_content = """
+In the beginning God created the heavens and the earth.
+Now the earth was formless and empty, darkness was over 
+the surface of the deep, and the Spirit of God was 
+hovering over the waters...
+"""
+
+webhook_url = "https://your-n8n-instance.com/webhook/bible-video-generator"
+result = automated_video_generation(biblical_content, webhook_url)
+```
+
+#### **Batch Processing Example**
+```python
+def batch_process_chapters(chapters_list):
+    """Process multiple biblical chapters in sequence"""
+    
+    results = []
+    
+    for i, chapter_text in enumerate(chapters_list):
+        print(f"Processing chapter {i+1}/{len(chapters_list)}...")
+        
+        # Process each chapter
+        with open('Input', 'w') as f:
+            f.write(chapter_text)
+        
+        subprocess.run(['python', 'biblical_text_processor.py'])
+        
+        # Read result
+        processed_files = [f for f in os.listdir('.') if f.startswith('processed_biblical_text_')]
+        latest_file = max(processed_files, key=os.path.getctime)
+        
+        with open(latest_file, 'r') as f:
+            processed_text = f.read()
+        
+        results.append({
+            'chapter': i+1,
+            'processed_text': processed_text,
+            'file': latest_file
+        })
+        
+        # Delay between chapters
+        time.sleep(2)
+    
+    return results
+
+# Example: Process Genesis chapters 1-3
+genesis_chapters = [
+    "Genesis 1:1-31 content...",
+    "Genesis 2:1-25 content...", 
+    "Genesis 3:1-24 content..."
+]
+
+batch_results = batch_process_chapters(genesis_chapters)
+print(f"✅ Processed {len(batch_results)} chapters successfully")
+```
+
+#### **Quality Validation Integration**
+```python
+def validate_processed_text(processed_text):
+    """Validate processed text meets video generation requirements"""
+    
+    words = processed_text.split()
+    word_count = len(words)
+    
+    validation_results = {
+        'word_count': word_count,
+        'optimal_range': 600 <= word_count <= 1000,
+        'video_length': word_count / 150,  # minutes at 150 WPM
+        'scene_estimate': word_count // 40,
+        'warnings': []
+    }
+    
+    # Check for issues
+    if word_count < 200:
+        validation_results['warnings'].append("Text too short - may result in very brief video")
+    elif word_count > 1200:
+        validation_results['warnings'].append("Text too long - may exceed optimal video length")
+    
+    # Check for biblical accuracy markers
+    if not any(word in processed_text.lower() for word in ['god', 'lord', 'jesus', 'christ']):
+        validation_results['warnings'].append("No clear biblical references detected")
+    
+    return validation_results
+
+# Usage with text processor
+def enhanced_text_processing(input_text):
+    """Text processing with validation"""
+    
+    # Standard processing
+    with open('Input', 'w') as f:
+        f.write(input_text)
+    
+    subprocess.run(['python', 'biblical_text_processor.py'])
+    
+    # Read and validate result
+    processed_files = [f for f in os.listdir('.') if f.startswith('processed_biblical_text_')]
+    latest_file = max(processed_files, key=os.path.getctime)
+    
+    with open(latest_file, 'r') as f:
+        processed_text = f.read()
+    
+    validation = validate_processed_text(processed_text)
+    
+    print(f"📊 Validation Results:")
+    print(f"   Word Count: {validation['word_count']}")
+    print(f"   Video Length: {validation['video_length']:.1f} minutes")
+    print(f"   Scene Estimate: {validation['scene_estimate']} scenes")
+    print(f"   Optimal Range: {'✅' if validation['optimal_range'] else '⚠️'}")
+    
+    if validation['warnings']:
+        print(f"⚠️ Warnings:")
+        for warning in validation['warnings']:
+            print(f"   - {warning}")
+    
+    return processed_text, validation
 ```
 
 ### **📊 Quality Assurance**

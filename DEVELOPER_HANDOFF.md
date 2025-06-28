@@ -104,6 +104,56 @@ Prompt includes:
 - Body: ={{ JSON.stringify($json) }}
 ```
 
+### **🔧 n8n Node Configuration Examples**
+
+#### **Perplexity API Node Configuration**
+```json
+{
+  "authentication": "headerAuth",
+  "credential": "Perplexity-API",
+  "requestMethod": "POST",
+  "url": "https://api.perplexity.ai/chat/completions",
+  "bodyContentType": "raw",
+  "body": "={{ JSON.stringify($json) }}",
+  "options": {
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}
+```
+
+#### **JSON2Video API Node Configuration**
+```json
+{
+  "authentication": "headerAuth", 
+  "credential": "Json2Video",
+  "requestMethod": "POST",
+  "url": "https://api.json2video.com/v2/movies",
+  "bodyContentType": "json",
+  "jsonParameters": {
+    "template": "s4CDODC4eDeMTkbogbj2",
+    "quality": "high",
+    "variables": "={{ $json }}"
+  }
+}
+```
+
+#### **Status Check Node Configuration**
+```json
+{
+  "authentication": "headerAuth",
+  "credential": "Json2Video", 
+  "requestMethod": "GET",
+  "url": "={{ 'https://api.json2video.com/v2/movies/' + $('Generate 16:9 Spiritual Video').item.json.id }}",
+  "options": {
+    "response": {
+      "response.fullResponse": true
+    }
+  }
+}
+```
+
 ---
 
 ## Current Working Configuration

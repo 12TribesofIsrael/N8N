@@ -8,7 +8,7 @@
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 
 **📋 Document Version**: `v2.1.0`  
-**🔄 Last Updated**: January 2, 2025  
+**🔄 Last Updated**: June 27, 2025  
 **⚡ Latest Release**: See `RELEASES/v3.0.0/` for Black Hebrew Israelite specialized version
 
 ---

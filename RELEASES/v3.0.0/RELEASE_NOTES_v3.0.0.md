@@ -2,7 +2,7 @@
 
 ## 🏷️ **Black Hebrew Israelite Biblical Workflow**
 
-**Release Date**: January 2, 2025  
+**Release Date**: June 27, 2025  
 **Version**: v3.0.0  
 **Type**: Major Release (Breaking Changes)  
 **Specialization**: Black Hebrew Israelite Biblical Content

@@ -1,7 +1,7 @@
 # 📁 Folder Structure Guide - LongForm Video Platform
 
 **📋 Document Version**: `v2.1.0`  
-**🔄 Last Updated**: January 2, 2025  
+**🔄 Last Updated**: June 27, 2025  
 **🎯 Purpose**: Complete guide to the reorganized folder structure with version control
 
 ---

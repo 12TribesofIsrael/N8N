@@ -4,7 +4,7 @@
 This folder contains the **enhanced version** of the LongForm video automation workflow with **improved overlay text functionality** to match the quality of the Make.com short-form workflow.
 
 ## 📁 Files
-- **`ScaledMaster.json`** - Enhanced n8n workflow with better overlay text generation
+- **`ScaleMaster.json`** - Enhanced n8n workflow with better overlay text generation
 
 ## 🎯 Key Improvements
 
@@ -84,7 +84,7 @@ scene2_overlaidText: "Spiritual Scene 2"
 scene3_overlaidText: "Spiritual Scene 3"
 ```
 
-### **After (ScaledMaster.json):**
+### **After (ScaleMaster.json):**
 ```
 scene1_overlaidText: "Mind & Reflection"
 scene2_overlaidText: "Body in Worship"
@@ -96,7 +96,7 @@ scene5_overlaidText: "Unity with Divine"
 ## 🔧 Setup Instructions
 
 ### **1. Import Workflow**
-- Import `ScaledMaster.json` into your n8n instance
+- Import `ScaleMaster.json` into your n8n instance
 - All **credentials preserved** from FinalMaster.json:
   - **Perplexity-API**: `noOOIabOZieEx3ug`
   - **Json2Video**: `pKpJaJTXBg3wLGgY`
@@ -124,7 +124,7 @@ scene5_overlaidText: "Unity with Divine"
 4. ✅ **Make.com quality** (similar to short-form workflow)
 
 ## 📊 Testing Checklist
-- [ ] Import ScaledMaster.json successfully
+- [ ] Import ScaleMaster.json successfully
 - [ ] Run workflow with test content
 - [ ] Check overlay text in generated video
 - [ ] Compare with FinalMaster.json output
@@ -139,7 +139,7 @@ scene5_overlaidText: "Unity with Divine"
 5. **Analytics**: Track overlay text quality metrics
 
 ---
-**Created**: December 25, 2025  
+**Created**: June 24, 2025  
 **Purpose**: Enhanced overlay text for long-form video scaling  
 **Status**: Ready for testing and deployment  
 **Maintainer**: LongForm Video Automation Team 

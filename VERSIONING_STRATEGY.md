@@ -3,7 +3,7 @@
 ## 🎯 **Version Control Overview**
 
 **Current Version**: `v2.1.0`  
-**Last Updated**: January 2, 2025  
+**Last Updated**: June 27, 2025  
 **Versioning Scheme**: [Semantic Versioning (SemVer)](https://semver.org/)
 
 ---
@@ -95,7 +95,7 @@ LongForm_/
 ## 📋 **Version History**
 
 ### **v3.0.0 - Black Hebrew Israelite Specialized (Latest)**
-**Release Date**: January 2, 2025  
+**Release Date**: June 27, 2025  
 **Breaking Changes**: ✅ Yes - Specialized for Black Hebrew Israelite content
 
 **New Features**:
@@ -123,7 +123,7 @@ LongForm_/
 - ✅ Complete documentation suite
 
 ### **v1.2.0 - Scale Video Generator (Stable)**
-**Release Date**: December 25, 2024  
+**Release Date**: June 24, 2025  
 **Breaking Changes**: ❌ No - Enhancement release
 
 **New Features**:
@@ -214,6 +214,48 @@ For detailed instructions on creating new versions, see:
 5. **Update Documentation**: Add version info to main docs
 6. **Test Thoroughly**: Validate before release
 7. **Deploy**: Make available in RELEASES folder
+
+### **🔧 Practical Version Creation Commands**
+```bash
+# Example: Creating v3.1.0 release
+mkdir RELEASES/v3.1.0
+
+# Copy and rename workflow files
+copy "Bible_Chapter_Videos\BibleChapterMaster.json" "RELEASES\v3.1.0\BibleChapterMaster-v3.1.0.json"
+copy "Bible_Chapter_Videos\BibleChapterTemplate.json" "RELEASES\v3.1.0\BibleChapterTemplate-v3.1.0.json"
+
+# Copy script with version
+copy "Bible_Chapter_Videos\biblical_text_processor.py" "RELEASES\v3.1.0\biblical_text_processor-v1.2.0.py"
+
+# Create release documentation
+notepad RELEASES\v3.1.0\RELEASE_NOTES_v3.1.0.md
+```
+
+### **📋 Release Notes Template**
+```markdown
+# 🎬 Release Notes - v3.1.0
+
+**Release Date**: [DATE]  
+**Version**: v3.1.0  
+**Type**: Minor Release  
+
+## 🎯 **Release Highlights**
+- [New Feature 1]
+- [Enhancement 1] 
+- [Bug Fix 1]
+
+## 📊 **Technical Specifications**
+| Component | File Name | Description |
+|-----------|-----------|-------------|
+| **Workflow** | `ComponentName-v3.1.0.json` | Main workflow |
+| **Template** | `TemplateName-v3.1.0.json` | Video template |
+
+## ⚙️ **Installation**
+1. Download files from `RELEASES/v3.1.0/`
+2. Import workflow into n8n
+3. Upload template to JSON2Video
+4. Test with sample content
+```
 
 ### **🎯 Next Version Suggestions**
 - **v3.1.0**: Enhanced prompts, additional scene types

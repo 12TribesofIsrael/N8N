@@ -94,6 +94,40 @@ Historical workflow implementations and backup systems:
 
 ## 🚀 **Quick Start**
 
+### **📦 Installation Options**
+
+#### **⚡ Zero Dependencies (Core Functionality)**
+```bash
+# Biblical text processors use only Python built-ins
+# No installation required - maximum compatibility
+cd Bible_Chapter_Videos/
+python biblical_text_processor.py
+
+cd ../p/biblical_text_processorv2/  
+python biblical_text_processor_v2.py
+```
+
+#### **🧪 With API Testing**
+```bash
+# Install minimal dependencies for workflow validation
+pip install requests jsonschema
+
+# Or use requirements file
+pip install -r requirements-test.txt
+```
+
+#### **🛠️ Full Development Setup**
+```bash
+# Modern Python package installation
+pip install -e ".[full]"
+
+# Or traditional requirements
+pip install -r requirements-dev.txt
+```
+
+#### **📋 Detailed Installation**
+**👉 See: `INSTALLATION_GUIDE.md`** - Complete dependency management guide
+
 ### **🆕 For Large Biblical Texts** (New Multi-Section Processing)
 1. Navigate to `-p/biblical_text_processorv2/`
 2. Place your large biblical text in the `Input` file
@@ -107,10 +141,10 @@ Historical workflow implementations and backup systems:
 **📋 Daily Reference**: `QUICK_REFERENCE_CARD.md` - Essential commands and workflows
 
 ### **Prerequisites**
-- n8n or Make.com account
-- JSON2Video API access (Startup Plan $99.95/month recommended)
-- Perplexity AI API access ($20/month Pro plan)
-- Python 3.7+ for text processing
+- **Python**: 3.7+ (core functionality uses built-ins only)
+- **n8n or Make.com**: Workflow automation platform
+- **JSON2Video API**: Video generation service (Startup Plan $99.95/month recommended)
+- **Perplexity AI API**: Content generation ($20/month Pro plan)
 
 ### **🎬 Production-Ready Setup**
 
@@ -157,8 +191,18 @@ Historical workflow implementations and backup systems:
 
 ```
 LongForm_/
+├── 📦 DEPENDENCY MANAGEMENT           # NEW: Professional dependency management
+│   ├── requirements.txt               # Main dependencies
+│   ├── requirements-core.txt          # Zero dependencies (built-ins only)
+│   ├── requirements-test.txt          # Testing dependencies
+│   ├── requirements-dev.txt           # Development tools
+│   ├── pyproject.toml                 # Modern Python packaging
+│   ├── setup.py                       # Backward compatibility
+│   └── INSTALLATION_GUIDE.md          # Complete setup instructions
+│
 ├── 🆕 -p/biblical_text_processorv2/  # Multi-section text processor (NEW!)
 │   ├── biblical_text_processor_v2.py # Multi-section processing script
+│   ├── requirements.txt               # Component-specific dependencies
 │   ├── Input                         # Large biblical text input
 │   ├── Output                        # Multiple processed sections
 │   └── README.md                     # Usage instructions
@@ -167,6 +211,7 @@ LongForm_/
 │   ├── BibleChapterMaster.json       # n8n workflow
 │   ├── BibleChapterTemplate.json     # JSON2Video template
 │   ├── biblical_text_processor.py    # Text processing automation
+│   ├── requirements.txt               # Component dependencies
 │   ├── Input                         # Text input file
 │   ├── QUICK_START_GUIDE.md          # 30-minute setup guide
 │   ├── HANDOVER_COMPLETE.md          # Complete documentation

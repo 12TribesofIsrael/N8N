@@ -316,6 +316,42 @@ Required for each scene (1-5):
 - [ ] Set up alerting for workflow failures
 - [ ] Document any content-specific customizations
 
-**Last Updated**: December 25, 2025
+**Last Updated**: June 27, 2025 at 5:04 PM EST
 **Status**: ✅ **PRODUCTION READY** - All issues resolved, fully functional end-to-end
-**Scaling Status**: ✅ **READY FOR SCALING** - Detailed technical specifications documented 
+**Scaling Status**: ✅ **READY FOR SCALING** - Detailed technical specifications documented
+
+---
+
+## 🆕 **LATEST ENHANCEMENT: Biblical Text Processor V2**
+
+### **New Multi-Section Processing System**
+**Release Date**: June 27, 2025  
+**Location**: `-p/biblical_text_processorv2/`  
+**Purpose**: Automated processing of large biblical texts into multiple video-ready sections
+
+#### **Key Features Added**:
+- ✅ **Multi-Section Processing**: Breaks large biblical texts into multiple 1000-word sections
+- ✅ **Intelligent Text Cleaning**: Removes verse references, normalizes formatting
+- ✅ **Sentence Boundary Preservation**: Maintains natural flow between sections
+- ✅ **Comprehensive Output**: All sections saved in single organized file
+- ✅ **Video Metrics**: Real-time calculation of video length and scene count per section
+- ✅ **Production Integration**: Seamlessly integrates with existing Biblical Video Generator
+
+#### **System Architecture Enhancement**:
+```
+Large Biblical Text (Input) → Text Processor V2 → Multiple 1000-word Sections → Biblical Video Generator → Multiple Professional Videos
+```
+
+#### **Technical Specifications**:
+- **Input**: Large biblical texts (unlimited size)
+- **Processing**: Intelligent 1000-word segmentation
+- **Output**: Organized sections with video metrics
+- **Integration**: Direct compatibility with existing video workflows
+- **Performance**: Processes 18KB+ texts in seconds
+
+#### **Production Benefits**:
+- **Batch Video Creation**: Generate multiple videos from single large text
+- **Consistent Quality**: Each section optimized for 5-7 minute videos
+- **Seamless Workflow**: Paste large text → Get multiple video-ready sections
+- **Time Efficiency**: Eliminates manual text segmentation
+- **Professional Output**: Maintains biblical reverence and accuracy 

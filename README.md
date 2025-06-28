@@ -7,15 +7,31 @@
 ![Version](https://img.shields.io/badge/Version-v2.1.0-blue)
 ![Platform](https://img.shields.io/badge/Platform-n8n%20%7C%20Make.com-orange)
 
-**📋 Document Version**: `v2.1.0`  
-**🔄 Last Updated**: January 2, 2025  
-**📊 System Version**: See `VERSIONING_STRATEGY.md` for component versions
+**📋 Document Version**: `v2.2.0`  
+**🔄 Last Updated**: June 27, 2025 at 5:04 PM EST  
+**📊 System Version**: See `VERSIONING_STRATEGY.md` for component versions  
+**🆕 Latest Enhancement**: Biblical Text Processor V2 - Multi-Section Processing System
 
 ---
 
 ## 🎯 **Platform Overview**
 
 The LongForm Video Generation Platform is a comprehensive automation system that transforms text content into professional-quality videos using advanced AI and workflow automation technologies.
+
+## 🆕 **LATEST BREAKTHROUGH: Multi-Section Processing (June 27, 2025)**
+
+### **Biblical Text Processor V2**
+**Location**: `-p/biblical_text_processorv2/`  
+**Status**: ✅ **PRODUCTION READY**
+
+Revolutionary enhancement that transforms how we handle large biblical texts:
+- ✅ **Unlimited Text Processing**: Handle texts of any size
+- ✅ **Intelligent Segmentation**: Automatically breaks text into optimal 1000-word sections
+- ✅ **Batch Video Preparation**: Single large text → Multiple video-ready sections
+- ✅ **Context Preservation**: Maintains biblical accuracy and sentence flow
+- ✅ **Production Integration**: Seamlessly works with existing Biblical Video Generator
+
+**Workflow**: `Large Biblical Text → Text Processor V2 → Multiple 1000-word Sections → Multiple Professional Videos`
 
 ### **🎬 Featured Projects**
 
@@ -78,6 +94,13 @@ Historical workflow implementations and backup systems:
 
 ## 🚀 **Quick Start**
 
+### **🆕 For Large Biblical Texts** (New Multi-Section Processing)
+1. Navigate to `-p/biblical_text_processorv2/`
+2. Place your large biblical text in the `Input` file
+3. Run `python biblical_text_processor_v2.py`
+4. Get multiple 1000-word sections in the `Output` file
+5. Use each section with Biblical Video Generator
+
 ### **🎯 For Production Use** ⭐ **RECOMMENDED**
 **👉 Follow: `PRODUCTION_USER_GUIDE.md`** - Complete 30-minute setup to production
 
@@ -121,12 +144,25 @@ Historical workflow implementations and backup systems:
 - **4-7 minute videos** (optimal engagement)
 - **$1.27 cost per video** (including all APIs)
 
+### **🆕 Enhanced Capabilities (June 27, 2025)**
+- ✅ **Multi-Section Processing**: Process unlimited text sizes
+- ✅ **Batch Preparation**: Single input → Multiple video-ready sections
+- ✅ **Intelligent Segmentation**: Optimal 1000-word sections with context preservation
+- ✅ **Seamless Integration**: Works with all existing workflows
+- ✅ **Time Efficiency**: Eliminates manual text segmentation
+
 ---
 
 ## 📁 **Project Structure**
 
 ```
 LongForm_/
+├── 🆕 -p/biblical_text_processorv2/  # Multi-section text processor (NEW!)
+│   ├── biblical_text_processor_v2.py # Multi-section processing script
+│   ├── Input                         # Large biblical text input
+│   ├── Output                        # Multiple processed sections
+│   └── README.md                     # Usage instructions
+│
 ├── 📖 Bible_Chapter_Videos/          # Biblical video generator (PRODUCTION)
 │   ├── BibleChapterMaster.json       # n8n workflow
 │   ├── BibleChapterTemplate.json     # JSON2Video template

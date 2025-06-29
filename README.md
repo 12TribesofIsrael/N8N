@@ -4,13 +4,13 @@
 > Advanced workflows for generating high-quality, long-form videos with AI-powered content creation and professional presentation.
 
 ![Status](https://img.shields.io/badge/Status-Production%20Ready-brightgreen)
-![Version](https://img.shields.io/badge/Version-v2.1.0-blue)
-![Platform](https://img.shields.io/badge/Platform-n8n%20%7C%20Make.com-orange)
+![Version](https://img.shields.io/badge/Version-v5.1.0-blue)
+![Platform](https://img.shields.io/badge/Platform-n8n%20%7C%20ElevenLabs%20%7C%20JSON2Video-orange)
 
-**📋 Document Version**: `v2.2.0`  
-**🔄 Last Updated**: June 27, 2025 at 5:04 PM EST  
+**📋 Document Version**: `v5.1.0`  
+**🔄 Last Updated**: June 28, 2025 at 11:30 PM EST  
 **📊 System Version**: See `VERSIONING_STRATEGY.md` for component versions  
-**🆕 Latest Enhancement**: Biblical Text Processor V2 - Multi-Section Processing System
+**🆕 Latest Enhancement**: Version 5.1.0 - 20-Scene Production System ✅ **WORKING**
 
 ---
 
@@ -18,20 +18,36 @@
 
 The LongForm Video Generation Platform is a comprehensive automation system that transforms text content into professional-quality videos using advanced AI and workflow automation technologies.
 
-## 🆕 **LATEST BREAKTHROUGH: Multi-Section Processing (June 27, 2025)**
+## 🆕 **LATEST BREAKTHROUGH: Version 5.1.0 - 20-Scene Production System (June 28, 2025)**
 
-### **Biblical Text Processor V2**
-**Location**: `-p/biblical_text_processorv2/`  
-**Status**: ✅ **PRODUCTION READY**
+### **🎬 Version 5.1 - ElevenLabs 20-Scene Production** ✅ **CURRENT PRODUCTION**
+**Location**: `Version 5.1 - ElevenLabs 20-Scene Production/`  
+**Status**: ✅ **PRODUCTION READY** - 10x Scale Increase  
+**Template ID**: `YCEc18dUc0g8Dwd9DEBS` (JSON2Video)
 
-Revolutionary enhancement that transforms how we handle large biblical texts:
-- ✅ **Unlimited Text Processing**: Handle texts of any size
-- ✅ **Intelligent Segmentation**: Automatically breaks text into optimal 1000-word sections
-- ✅ **Batch Video Preparation**: Single large text → Multiple video-ready sections
-- ✅ **Context Preservation**: Maintains biblical accuracy and sentence flow
-- ✅ **Production Integration**: Seamlessly works with existing Biblical Video Generator
+**Revolutionary 20-Scene Production System**:
+- ✅ **20-Scene Architecture**: Professional 12-20 minute videos (vs 2-3 minute demos)
+- ✅ **Intelligent Content Distribution**: Perplexity AI forces exactly 20 scenes regardless of input length
+- ✅ **Scalable Ken Burns System**: 5 motion types cycling across all 20 scenes
+- ✅ **Production Template**: 240+ variables (20 scenes × 12 variables each)
+- ✅ **ElevenLabs Voice Integration**: Premium voice quality maintained
+- ✅ **Professional Quality**: All features from v5.0.0 + massive scale increase
 
-**Workflow**: `Large Biblical Text → Text Processor V2 → Multiple 1000-word Sections → Multiple Professional Videos`
+**Production Workflow**: `Large Biblical Text → 20-Scene AI Processing → ElevenLabs Voice + Cinematic Effects → Professional Long-Form Video`
+
+### **🎬 Version 5.0 - ElevenLabs Single Scene** ✅ **STABLE FALLBACK**
+**Location**: `Version 5 - ElevenLabs Single Scene/`  
+**Status**: ✅ **PRODUCTION READY** - 2-Scene Testing  
+**🎬 Verified**: [Working Video with Ken Burns Effects](https://assets.json2video.com/clients/W6OcjbEMxX/renders/2025-06-28-09480.mp4)
+
+Foundation system with premium features:
+- ✅ **ElevenLabs Voice Integration**: Premium voice quality (NgBYGKDDq2Z8Hnhatgma)
+- ✅ **Ken Burns Cinematic Effects**: 5 motion types - zoom-in, zoom-out, ken-burns, pan-left, pan-right
+- ✅ **Professional Yellow Captions**: Oswald Bold font with auto-sync
+- ✅ **2-Scene Testing Template**: Credit-efficient development framework
+- ✅ **Cultural Authenticity**: Black Hebrew Israelite representation maintained
+
+**Workflow**: `Biblical Text → Perplexity AI → ElevenLabs Voice + Ken Burns Animation → Professional Video`
 
 ### **🎬 Featured Projects**
 
@@ -148,29 +164,40 @@ pip install -r requirements-dev.txt
 
 ### **🎬 Production-Ready Setup**
 
-1. **Download System Files**:
+1. **Download System Files** ⭐ **RECOMMENDED - LATEST VERSION**:
    ```bash
-   # For General Biblical Content
-   RELEASES/v2.1.0/BibleChapterMaster-v2.1.0.json
-   RELEASES/v2.1.0/biblical_text_processor-v1.1.0.py
+   # Version 5.1.0 - Current Production (20-Scene System)
+   RELEASES/v5.1.0/ElevenLabs-Workflow-v5.1.0.json
+   RELEASES/v5.1.0/ElevenLabs-Template-v5.1.0.json
    
-   # For Black Hebrew Israelite Content  
+   # Alternative: Version 5.0.0 - Foundation (2-Scene System)
+   RELEASES/v5.0.0/ElevenLabs-Workflow-v5.0.0.json
+   RELEASES/v5.0.0/ElevenLabs-Template-v5.0.0.json
+   
+   # Specialized: Black Hebrew Israelite Content
    RELEASES/v3.0.0/BHI-Workflow-v3.0.0.json
    RELEASES/v3.0.0/BHI-Template-v3.0.0.json
+   
+   # Legacy: General Biblical Content  
+   RELEASES/v2.1.0/BibleChapterMaster-v2.1.0.json
+   RELEASES/v2.1.0/biblical_text_processor-v1.1.0.py
    ```
 
 2. **Configure APIs**:
-   - Import workflow into n8n
-   - Set up Perplexity AI and JSON2Video credentials
+   - Import v5.1.0 workflow into n8n
+   - Upload v5.1.0 template to JSON2Video (get new template ID)
+   - Set up **ElevenLabs API** credentials (NgBYGKDDq2Z8Hnhatgma voice)
+   - Configure **Perplexity AI** and **JSON2Video** credentials
+   - Update workflow with new template ID
    - Test with sample biblical content
 
 3. **Start Production**:
    ```bash
-   # Daily workflow (8-13 minutes per video)
-   cd Bible_Chapter_Videos
-   notepad Input                      # Add biblical text
-   python biblical_text_processor.py  # Process text  
-   # Copy output → Paste in n8n → Execute workflow
+   # Daily workflow (8-13 minutes per 20-scene video)
+   cd -p/biblical_text_processorv2
+   notepad Input                          # Add biblical text
+   python biblical_text_processor_v2.py  # Process large text into sections
+   # Copy section → Paste in n8n → Execute v5.1.0 workflow → 12-20 minute video
    ```
 
 ### **📊 Production Capacity**
@@ -178,12 +205,12 @@ pip install -r requirements-dev.txt
 - **4-7 minute videos** (optimal engagement)
 - **$1.27 cost per video** (including all APIs)
 
-### **🆕 Enhanced Capabilities (June 27, 2025)**
-- ✅ **Multi-Section Processing**: Process unlimited text sizes
-- ✅ **Batch Preparation**: Single input → Multiple video-ready sections
-- ✅ **Intelligent Segmentation**: Optimal 1000-word sections with context preservation
-- ✅ **Seamless Integration**: Works with all existing workflows
-- ✅ **Time Efficiency**: Eliminates manual text segmentation
+### **🆕 Enhanced Capabilities (June 28, 2024)**
+- ✅ **ElevenLabs Voice Integration**: Premium voice quality for all videos
+- ✅ **Ken Burns Cinematic Effects**: Professional motion effects on all images
+- ✅ **2-Scene Testing Framework**: Credit-efficient development and testing
+- ✅ **Auto-Sync Captions**: Perfect voice-caption synchronization
+- ✅ **Cultural Authenticity**: Black Hebrew Israelite representation maintained
 
 ---
 
